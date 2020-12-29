@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <view class="topPlace" style="height: 25px; background-color: #36B4E4;"></view>
+  <image class="banner" src="../../assets/banner.png" mode="widthFix"></image>
+  <image class="notice" src="../../assets/notice.png" mode="widthFix"></image>
+  <image class="notice-item" src="../../assets/notice-item.png" 
+    wx:for="{{[1,2,3]}}"
+    wx:key="index"
+    mode="widthFix"></image>
+  <image class="tabbar" src="../../assets/tabbar.png" mode="widthFix"></image>
+  <view class="scan"  bindtap="goPreview"></view>
+</view>

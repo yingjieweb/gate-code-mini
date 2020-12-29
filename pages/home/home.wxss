@@ -1,0 +1,22 @@
+.home {
+  width: 100%;
+  position: relative;
+}
+
+.scan {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 70px;
+  height: 50px;
+}
+
+image {
+  width: 100%;
+}
+
+.tabbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

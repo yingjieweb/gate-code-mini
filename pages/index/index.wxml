@@ -1,0 +1,19 @@
+<view class="container" wx:if="{{show}}">
+  <view class="title">
+    <view>生成通行许可</view>
+  </view>
+  <view class="inputItem">
+    <text>姓名</text>
+    <input placeholder="吴彦祖" bindinput="bindNameInput" value="{{name}}" />
+  </view>
+  <view class="inputItem">
+    <text>学号</text>
+    <input placeholder="1870000" bindinput="bindStuidInput" value="{{stuid}}" />
+  </view>
+  <view class="inputItem">
+    <text>大门名称</text>
+    <input placeholder="xx校区xx门" bindinput="bindGatenameInput" value="{{gatename}}" />
+  </view>
+  <button class="preview" type="primary" bindtap="goHome" style="width: 100%;">预览</button>
+  <view class="alert">本链接仅供学习交流请勿用于非法用途</view>
+</view>

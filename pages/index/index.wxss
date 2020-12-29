@@ -1,0 +1,42 @@
+.container {
+  padding: 0 30px;
+}
+
+.title {
+  color: #90caf8;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.inputItem {
+  margin-bottom: 48px;
+}
+
+.inputItem > text {
+  color: #666;
+  font-size: 16px;
+}
+
+.inputItem > input {
+  padding: 10px 0;
+  font-size: 18px;
+  color: #666;
+  outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #666;
+}
+
+.inputItem > input:hover {
+  border-bottom: 2px solid #ff4282;
+}
+
+.alert {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

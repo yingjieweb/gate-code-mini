@@ -1,0 +1,29 @@
+<view wx:if="{{show}}">
+  <view class="title">东北大学通行验证</view>
+  <view class="arrow">
+    <view class="wrapper">
+      <view class="left"></view>
+      <view class="right"></view>
+      <view class="axis"></view>
+    </view>
+  </view>
+  <view class="time">时间：{{currentTime}}</view>
+  <view class="info">
+    <view>
+      <span class="key">学工号</span>：
+      <span>{{stuid}}</span>
+    </view>
+    <view>
+      <span class="key">姓名</span>：
+      <span>{{name}}</span>
+    </view>
+    <view>
+      <span class="key">验证位置</span>：
+      <span>{{gatename}}</span>
+    </view>
+    <view>
+      <span class="key">进出状态</span>：
+      <span>进入</span>
+    </view>
+  </view>
+</view>
