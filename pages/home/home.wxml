@@ -2,9 +2,8 @@
 <view class="home">
   <view class="topPlace" style="height: 25px; background-color: #36B4E4;"></view>
   <image class="banner" src="../../assets/banner.png" mode="widthFix"></image>
-  <image class="notice" src="../../assets/notice.png" mode="widthFix"></image>
-  <image class="notice-item" src="../../assets/notice-item.png" 
-    wx:for="{{[1,2,3]}}"
+  <image class="notice" src="../../assets/notice.png" 
+    wx:for="{{[1,2,3,4,5,6]}}"
     wx:key="index"
     mode="widthFix"></image>
   <image class="tabbar" src="../../assets/tabbar.png" mode="widthFix"></image>
