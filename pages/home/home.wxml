@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <view class="home">
-  <view class="topPlace" style="height: 25px; background-color: #36B4E4;"></view>
+  <view class="topPlace" style="height: 16px; background-color: #36B4E4;"></view>
   <image class="banner" src="../../assets/banner.png" mode="widthFix"></image>
   <image class="notice" src="../../assets/notice.png" 
     wx:for="{{[1,2,3,4,5,6]}}"
