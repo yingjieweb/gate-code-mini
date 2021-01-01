@@ -3,12 +3,14 @@
   <image src="../../assets/placeholder.jpg" mode="widthFix"></image>
 </view>
 <view class="home" wx:if="{{!placeholderFigureVisible}}">
-  <view class="topPlace" style="height: 16px; background-color: #36B4E4;"></view>
+  <view class="topPlace">
+    <span>智慧东大</span>
+  </view>
   <image class="banner" src="../../assets/banner.png" mode="widthFix"></image>
   <image class="notice" src="../../assets/notice.png" 
-    wx:for="{{[1,2,3,4,5,6]}}"
+    wx:for="{{[1,2,3,4,5,6,7]}}"
     wx:key="index"
     mode="widthFix"></image>
   <image class="tabbar" src="../../assets/tabbar.png" mode="widthFix"></image>
-  <view class="scan"  bindtap="goPreview"></view>
+  <image class="scan" src="../../assets/scan.png" bindtap="goPreview"></image>
 </view>

@@ -3,12 +3,31 @@
   position: relative;
 }
 
-.scan {
-  position: absolute;
+.topPlace {
+  height: 68px;
+  width: 100%;
+  text-align: center;
+  background-color: #36B4E4;
+  color: #E8FBFE;
+  line-height: 68px;
+  position: fixed;
+  top: 0;
   left: 0;
-  top: 25px;
-  width: 70px;
-  height: 50px;
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.banner {
+  margin-top: 76px;
+}
+
+.scan {
+  position: fixed;
+  left: 0;
+  top: 26px;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
 }
 
 image {

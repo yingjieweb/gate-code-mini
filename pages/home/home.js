@@ -25,6 +25,6 @@ Page({
       this.setData({
         placeholderFigureVisible: false
       })
-    }, 2000)
+    }, 3000)
   }
 })
