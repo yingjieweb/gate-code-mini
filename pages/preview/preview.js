@@ -25,7 +25,7 @@ Page({
     let mm = parseInt(date.getMinutes()) < 10 ? '0' + date.getMinutes() : date.getMinutes()
     let ss = parseInt(date.getSeconds()) < 10 ? '0' + date.getSeconds() : date.getSeconds()
     this.setData({
-      currentTime: `${YY}-${MM}-${DD} ${hh}:${mm}:${ss}`
+      currentTime: `${YY}-0${++MM}-${DD} ${hh}:${mm}:${ss}`
     })
   }
 })
