@@ -2,7 +2,8 @@ Page({
   data: {
     name: '',
     stuid: '',
-    gatename: ''
+    gatename: '',
+    placeholderFigureVisible: true
   },
   goPreview() {
     wx.scanCode({
@@ -14,11 +15,16 @@ Page({
     })
   },
   // 生命周期函数--监听页面加载
-  onLoad: function(options) {
+  onLoad(options) {
     this.setData({
       name: options.name,
       stuid: options.stuid,
       gatename: options.gatename
     })
+    setTimeout(() => {
+      this.setData({
+        placeholderFigureVisible: false
+      })
+    }, 2000)
   }
 })

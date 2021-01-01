@@ -1,5 +1,8 @@
 <!--pages/home/home.wxml-->
-<view class="home">
+<view class="placeholder" wx:if="{{placeholderFigureVisible}}">
+  <image src="../../assets/placeholder.jpg" mode="widthFix"></image>
+</view>
+<view class="home" wx:if="{{!placeholderFigureVisible}}">
   <view class="topPlace" style="height: 16px; background-color: #36B4E4;"></view>
   <image class="banner" src="../../assets/banner.png" mode="widthFix"></image>
   <image class="notice" src="../../assets/notice.png" 
