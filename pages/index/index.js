@@ -37,5 +37,11 @@ Page({
     wx.redirectTo({
       url: `/pages/home/home?name=${this.data.name}&stuid=${this.data.stuid}&gatename=${this.data.gatename}`
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '东大通行许可',
+      path: '/page/index/index'
+    }
   }
 })
