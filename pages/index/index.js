@@ -41,7 +41,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '东大通行许可',
-      path: '/page/index/index'
+      path: '/pages/index/index'
     }
   }
 })
