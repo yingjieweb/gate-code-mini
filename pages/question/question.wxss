@@ -1,0 +1,5 @@
+/* pages/question.wxss */
+.qa{
+  padding: 0 12px;
+  margin: 12px 0;
+}

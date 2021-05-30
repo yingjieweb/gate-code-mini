@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/home/home",
-    "pages/preview/preview"
+    "pages/preview/preview",
+    "pages/question/question"
   ],
   "window": {
     "backgroundTextStyle": "light",

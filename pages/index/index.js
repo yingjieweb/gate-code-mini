@@ -38,7 +38,14 @@ Page({
       url: `/pages/home/home?name=${this.data.name}&stuid=${this.data.stuid}&gatename=${this.data.gatename}`
     })
   },
-  onShareAppMessage: function () {
+
+  goQuestion() {
+    wx.navigateTo({
+      url: '/pages/question/question',
+    })
+  },
+
+  onShareAppMessage() {
     return {
       title: '东大通行许可',
       path: '/pages/index/index'

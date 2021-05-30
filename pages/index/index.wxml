@@ -16,4 +16,5 @@
   </view>
   <button class="preview" type="primary" bindtap="goHome" style="width: 100%;">预览</button>
   <view class="alert">本链接仅供学习交流请勿用于非法用途</view>
+  <view class="question" bindtap="goQuestion">常见问题</view>
 </view>
