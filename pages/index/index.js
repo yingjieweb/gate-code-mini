@@ -8,6 +8,9 @@ Page({
     gatename: '浑南校区西门',
     show: true
   },
+  onLoad() {
+    this.getCache()
+  },
   bindNameInput(e) {
     this.setData({
       name: e.detail.value
@@ -36,6 +39,37 @@ Page({
     })
     wx.redirectTo({
       url: `/pages/home/home?name=${this.data.name}&stuid=${this.data.stuid}&gatename=${this.data.gatename}`
+    })
+    this.setCache()
+  },
+
+  setCache() {
+    wx.setStorage({
+      key: "name",
+      data: this.data.name
+    })
+    wx.setStorage({
+      key: "stuid",
+      data: this.data.stuid
+    })
+  },
+
+  getCache() {
+    wx.getStorage({
+      key: 'name',
+      success: (res) => {
+        this.setData({
+          name: res.data
+        })
+      }
+    })
+    wx.getStorage({
+      key: 'stuid',
+      success: (res) => {
+        this.setData({
+          stuid: res.data
+        })
+      }
     })
   },
 
