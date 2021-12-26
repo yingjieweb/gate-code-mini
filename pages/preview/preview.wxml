@@ -1,29 +1,32 @@
-<view wx:if="{{show}}">
-  <view class="title">东北大学通行验证</view>
-  <view class="arrow">
-    <view class="wrapper">
-      <view class="left"></view>
-      <view class="right"></view>
-      <view class="axis"></view>
+<view class="preview-wrapper" wx:if="{{show}}">
+  <image class="preview-bg" src="../../assets/preview_bg.png" mode="widthFix"></image>
+  
+  <view class="basic-info">
+    <view class="imgs">
+      <image class="avatar" src="{{avatar}}" mode="aspectFill" wx:if="{{avatar}}"></image>
+      <view class="pass-status-wrapper" wx:if="{{pass}}">
+        <image class="pass-status" src="../../assets/pass.png" mode="aspectFill"></image>
+      </view>
+      <view class="pass-status-wrapper" wx:if="{{!pass}}">
+        <image class="pass-status" src="../../assets/not_pass.png" mode="aspectFill"></image>
+      </view>
+    </view>
+
+    <view class="texts">
+      <view class="name">{{name}}</view>
+      <view class="stuid">{{stuid}}</view>
+      <view class="pass-auth">
+        通行权限:
+        <text class="permission" wx:if="{{pass}}">允许</text>
+        <text class="prohibit" wx:if="{{!pass}}">禁止</text>
+      </view>
+      <view class="gatename">
+        {{gatename}}
+        <text class="entry">入</text>
+      </view>
+      <view class="time">{{currentTime}}</view>
     </view>
   </view>
-  <view class="time">时间：{{currentTime}}</view>
-  <view class="info">
-    <view>
-      <span class="key">学工号</span>：
-      <span>{{stuid}}</span>
-    </view>
-    <view>
-      <span class="key">姓名</span>：
-      <span>{{name}}</span>
-    </view>
-    <view>
-      <span class="key">验证位置</span>：
-      <span>{{gatename}}</span>
-    </view>
-    <view>
-      <span class="key">进出状态</span>：
-      <span>进入</span>
-    </view>
-  </view>
+
+  <view class="copyright">© 东东大学</view>
 </view>

@@ -1,7 +1,6 @@
 .container {
   padding: 0 30px;
 }
-
 .title {
   color: #90caf8;
   font-size: 28px;
@@ -9,17 +8,14 @@
   margin-top: 16px;
   margin-bottom: 40px;
 }
-
-.inputItem {
-  margin-bottom: 48px;
+.input-item, .avatar-item {
+  margin-bottom: 24px;
 }
-
-.inputItem > text {
+.input-item > text {
   color: #666;
   font-size: 16px;
 }
-
-.inputItem > input {
+.input-item > input {
   padding: 10px 0;
   font-size: 18px;
   color: #666;
@@ -28,19 +24,17 @@
   border: none;
   border-bottom: 2px solid #666;
 }
-
-.inputItem > input:hover {
+.input-item > input:hover {
   border-bottom: 2px solid #ff4282;
 }
-
-.alert {
+.alert-item {
   color: #666;
   font-size: 16px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
+.alert-item .text {
+  margin-bottom: 14px;
+}
 .question{
   color: rgb(135, 16, 190);
   font-size: 16px;

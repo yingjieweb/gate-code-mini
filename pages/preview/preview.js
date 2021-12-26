@@ -2,20 +2,6 @@ Page({
   data: {
     show: false
   },
-  onLoad(options) {
-    this.getCurrentTime();
-    this.setData({
-      name: options.name,
-      stuid: options.stuid,
-      gatename: options.gatename
-    })
-
-    setTimeout(() => {
-      this.setData({
-        show: true
-      })
-    }, 2000)
-  },
   getCurrentTime() {
     let date = new Date()
     let YY = date.getFullYear()
@@ -29,5 +15,21 @@ Page({
     this.setData({
       currentTime: `${YY}-${MM}-${DD} ${hh}:${mm}:${ss}`
     })
-  }
+  },
+  onLoad(options) {
+    this.getCurrentTime();
+    this.setData({
+      name: options.name,
+      stuid: options.stuid,
+      gatename: options.gatename,
+      avatar: options.avatar,
+      pass: options.pass === true
+    })
+
+    setTimeout(() => {
+      this.setData({
+        show: true
+      })
+    }, 2000)
+  },
 })

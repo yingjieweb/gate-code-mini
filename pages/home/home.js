@@ -3,6 +3,8 @@ Page({
     name: '',
     stuid: '',
     gatename: '',
+    avatar: '',
+    isKnownAlert: false,
     placeholderFigureVisible: true
   },
   goPreview() {
@@ -13,9 +15,10 @@ Page({
         if (realGateName) {
           this.data.gatename = realGateName
         }
-
         wx.redirectTo({
-          url: `/pages/preview/preview?name=${this.data.name}&stuid=${this.data.stuid}&gatename=${this.data.gatename}`
+          url: `/pages/preview/preview?name=${this.data.name}&stuid=${this.data.stuid}&gatename=${this.data.gatename}` + 
+               `&avatar=${this.data.avatar}&pass=${this.data.isKnownAlert}`
+          
         })
       }
     })
@@ -25,7 +28,9 @@ Page({
     this.setData({
       name: options.name,
       stuid: options.stuid,
-      gatename: options.gatename
+      gatename: options.gatename,
+      avatar: options.avatar,
+      pass: options.pass
     })
     setTimeout(() => {
       this.setData({

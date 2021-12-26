@@ -1,6 +1,5 @@
-<!--pages/home/home.wxml-->
 <view class="placeholder" wx:if="{{placeholderFigureVisible}}">
-  <image class="home-img " src="../../assets/placeholder.jpg"></image>
+  <image class="home-img" src="../../assets/placeholder.jpg"></image>
 </view>
 <view class="home" wx:if="{{!placeholderFigureVisible}}">
   <view class="topPlace">

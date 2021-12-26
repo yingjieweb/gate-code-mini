@@ -2,19 +2,34 @@
   <view class="title">
     <view>生成通行许可</view>
   </view>
-  <view class="inputItem">
+
+  <view class="input-item">
     <text>姓名</text>
     <input placeholder="吴彦祖" bindinput="bindNameInput" value="{{name}}" />
   </view>
-  <view class="inputItem">
+  <view class="input-item">
     <text>学号</text>
     <input placeholder="1870000" bindinput="bindStuidInput" value="{{stuid}}" />
   </view>
-  <view class="inputItem">
+  <view class="input-item">
     <text>大门名称</text>
     <input placeholder="xx校区xx门" bindinput="bindGatenameInput" value="{{gatename}}" />
   </view>
-  <button class="preview" type="primary" bindtap="goHome" style="width: 100%;">预览</button>
-  <view class="alert">本链接仅供学习交流请勿用于非法用途</view>
+
+  <view class="avatar-item">
+    <image class="avatar-placeholder" src="{{avatar}}" mode="aspectFill" wx:if="{{avatar}}"></image>
+    <button class="upload-img-btn" bindtap="chooseImg" type='primary' style="width: 100%;">点击拍照 / 上传头像</button>
+  </view>
+
+  <view class="alert-item">
+    <view class="text">该小程序仅供编程爱好者学习交流使用，如需出入校园请走正规审批流程！</view>
+    <radio-group bindchange="changeRadio" style="display: flex; justify-content: space-evenly">
+      <view><radio value="true" checked="{{isKnownAlert}}"/>我已知晓</view>
+      <view><radio value="false" checked="{{!isKnownAlert}}"/>就是头铁</view>
+    </radio-group>
+  </view>
+
+  <button class="preview" type="primary" bindtap="navToHome" style="width: 100%;">预览</button>
+
   <view class="question" bindtap="goQuestion">常见问题</view>
 </view>
