@@ -2,6 +2,8 @@
   min-height: 100vh;
   background-color: #F3F7F6;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .preview-bg {
   display: block;
@@ -24,20 +26,22 @@
   position: relative;
 }
 .basic-info .imgs .avatar {
-  border: 1px solid #000;
   width: 160px;
   height: 160px;
   margin-top: 30px;
   border-radius: 50%;
 }
 .basic-info .imgs .pass-status-wrapper {
-  padding: 3px;
-  margin-top: 30px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
   left: 120px;
-  top: 110px;
+  top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .basic-info .imgs .pass-status-wrapper .pass-status {
   width: 50px;
@@ -76,8 +80,7 @@
   margin-bottom: 20px;
 }
 .copyright {
-  margin-top: 40px;
+  margin-top: auto;
+  margin-bottom: 20px;
   text-align: center;
-  position: relative;
-  top: 320px;
 }
