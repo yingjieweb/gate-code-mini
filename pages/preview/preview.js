@@ -18,12 +18,13 @@ Page({
   },
   onLoad(options) {
     this.getCurrentTime();
+    console.log(options.pass);
     this.setData({
       name: options.name,
       stuid: options.stuid,
       gatename: options.gatename,
       avatar: options.avatar,
-      pass: options.pass === true
+      pass: options.pass === "true"
     })
 
     setTimeout(() => {

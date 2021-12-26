@@ -17,28 +17,12 @@ Page({
         }
         wx.redirectTo({
           url: `/pages/preview/preview?name=${this.data.name}&stuid=${this.data.stuid}&gatename=${this.data.gatename}` + 
-               `&avatar=${this.data.avatar}&pass=${this.data.isKnownAlert}`
+               `&avatar=${this.data.avatar}&pass=${this.data.pass}`
           
         })
       }
     })
-  },
-  // 生命周期函数--监听页面加载
-  onLoad(options) {
-    this.setData({
-      name: options.name,
-      stuid: options.stuid,
-      gatename: options.gatename,
-      avatar: options.avatar,
-      pass: options.pass
-    })
-    setTimeout(() => {
-      this.setData({
-        placeholderFigureVisible: false
-      })
-    }, 3000)
-  },
-  
+  },  
   getGateNameFromUrl(url) {
     let matches = url.match(/entrance_id=(\d+)&/)
     if (!matches) return ''
@@ -79,6 +63,19 @@ Page({
         break
     }
     return gateName
+  },
+  onLoad(options) {
+    this.setData({
+      name: options.name,
+      stuid: options.stuid,
+      gatename: options.gatename,
+      avatar: options.avatar,
+      pass: options.pass
+    })
+    setTimeout(() => {
+      this.setData({
+        placeholderFigureVisible: false
+      })
+    }, 3000)
   }
-
 })
